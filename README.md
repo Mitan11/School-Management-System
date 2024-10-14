@@ -38,7 +38,7 @@ This project is a **School Management System** that allows you to manage and tra
 
 2. 📁 Navigate to the project directory:
     ```sh
-    `School-Management-System`.
+    `School-Management-System`
     ```
 
 3. 🗄️ Import the database schema:
