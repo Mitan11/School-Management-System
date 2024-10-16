@@ -130,7 +130,7 @@
 
             $('#modalImage').attr('src', imageSrc);
             $('#downloadButton').attr('href', imageSrc);
-            $('#imageModalLabel').text(imageTitle);
+            // $('#imageModalLabel').text(imageTitle);
 
             // Store all images in an array
             images = $('[data-toggle="modal"]').map(function () {
