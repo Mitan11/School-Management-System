@@ -33,17 +33,19 @@ This project is a **School Management System** that allows you to manage and tra
 
 1. 📂 Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/Mitan11/School-Management-System-SMS-.git
+    git clone https://github.com/Mitan11/School-Management-System.git
     ```
 
 2. 📁 Navigate to the project directory:
     ```sh
-    `School-Management-System`
+    School-Management-System
     ```
 
 3. 🗄️ Import the database schema:
-    - Create a new database in MySQL named `SchoolManagementSystem`.
-    - Import the `SchoolManagementSystem.sql` file into your database.
+    - Create a new database in MySQL named ```sh
+    schoolmanagementsystem
+    ```.
+    - Import the `schoolmanagementsystem.sql` file into your database.
 
 4. 🛠️ Update the database connection details (host, username, password, database name) if required. By default, in XAMPP, the host is `localhost`, the username is `root`, the password is `''`, and the database name will be `SchoolManagementSystem`.
 
@@ -58,6 +60,9 @@ This project is a **School Management System** that allows you to manage and tra
     ```
 
 5. 🌐 Start your web server and navigate to the project directory in your browser.
+```sh
+http://localhost/School-Management-System/
+```
 
 ## 📖 Usage
 
