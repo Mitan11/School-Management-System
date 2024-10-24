@@ -1,25 +1,52 @@
-
 # 📚 School Management System 📅
 
-This project is a **School Management System** that allows you to manage and track various school activities, including student attendance. The system includes a calendar view to display attendance status for each day.
+The **School Management System** is a comprehensive software solution designed to manage and streamline the day-to-day operations of educational institutions. It aims to automate various administrative tasks, improve communication, and enhance the overall learning experience for students, teachers, and parents.
 
 ## ✨ Features
 
-- 📋 Display attendance records for a specific student.
-- 📆 Calendar view with attendance status (✅ Present, ❌ Absent, 🏖️ Leave, ⏰ Late).
-- 🔄 Navigation through months and years.
-- 🔒 Secure database queries using prepared statements.
-- 📋 Students can view their timetable.
-- 📆 Admin or teachers can manage the timetable.
-- 💳 Parents can pay fees.
+### Admin Panel
+
+- 👨‍💼 **Login**: Secure access for administrators.
+- 👥 **Manage Parent/Teacher Accounts**: Add, update, or remove user accounts.
+- 📘 **Manage Courses and Subjects**: Add and update course details.
+- 🗓️ **Manage Timetable**: Create and modify class schedules.
+- 🎉 **Manage Event Gallery**: Upload and organize event photos.
+- 💵 **Manage Fees**: Oversee fee collection and status.
+- 🔒 **Logout**: Secure logout functionality.
+
+### Teacher Panel
+
+- 👨‍🏫 **Login**: Secure access for teachers.
+- 📋 **Manage Attendance**: Track and update student attendance.
+- 📝 **Provide Homework/Notes**: Assign homework and share notes.
+- 📅 **Provide Timetable**: Set and update class schedules.
+- 🎉 **Manage Event Gallery**: Add and organize event photos.
+- 💵 **View Fees Details**: Access fee payment records.
+- 🔒 **Logout**: Secure logout functionality.
+
+### Parent Panel
+
+- 👪 **Login**: Secure access for parents.
+- 📊 **View Attendance**: Check student attendance records.
+- 📚 **View Homework**: See assigned homework and notes.
+- 🗓️ **View Timetable**: Access the student's timetable.
+- 💳 **Pay Fees**: Online fee payment feature.
+- 🎉 **View Event Gallery**: Browse event photos.
+- 🔒 **Logout**: Secure logout functionality.
+
+### Common Features
+
+- 📋 **Attendance Tracking**: Calendar view for tracking attendance (✅ Present, ❌ Absent, 🏖️ Leave, ⏰ Late).
+- 📅 **Timetable Management**: Admins and teachers can manage timetables.
+- 💳 **Fees Payment**: Parents can pay fees online.
 
 ## 🛠️ Technologies Used
 
 - 🐘 PHP
 - 🐬 MySQL
 - 🌐 HTML
-- 🎨 CSS
-- 💻 JavaScript
+- 🎨 CSS and it's Framework BOOTSTRAP
+- 💻 JavaScript and it's Librarie JQUERY
 
 ## 🚀 Setup Instructions
 
@@ -32,60 +59,75 @@ This project is a **School Management System** that allows you to manage and tra
 ### 📥 Installation
 
 1. 📂 Clone the repository to your local machine:
-    ```sh
-    git clone https://github.com/Mitan11/School-Management-System.git
-    ```
+
+   ```sh
+   git clone https://github.com/Mitan11/School-Management-System.git
+   ```
 
 2. 📁 Navigate to the project directory:
-    ```sh
-    School-Management-System
-    ```
+
+   ```sh
+   School-Management-System
+   ```
 
 3. 🗄️ Import the database schema:
-    - Create a new database in MySQL named 
-    ```sh
-    schoolmanagementsystem
-    ```
-    - Import the `schoolmanagementsystem.sql` file into your database.
+
+   - Create a new database in MySQL named
+
+   ```sh
+   schoolmanagementsystem
+   ```
+
+   - Import the `schoolmanagementsystem.sql` file into your database.
 
 4. 🛠️ Update the database connection details (host, username, password, database name) if required. By default, in XAMPP, the host is `localhost`, the username is `root`, the password is `''`, and the database name will be `SchoolManagementSystem`.
 
-    ```php
-    <?php
-    $db_connection = mysqli_connect('localhost', 'username', 'password', 'database_name');
+   ```php
+   <?php
+   $db_connection = mysqli_connect('localhost', 'username', 'password', 'database_name');
 
-    if (!$db_connection) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    ?>
-    ```
+   if (!$db_connection) {
+       die("Connection failed: " . mysqli_connect_error());
+   }
+   ?>
+   ```
 
 5. 🌐 Start your web server and navigate to the project directory in your browser.
+
 ```sh
 http://localhost/School-Management-System/
 ```
 
 ## 📖 Usage
 
-1. 🌐 Open the application in your web browser.
-2. 📊 Navigate to the attendance management section.
-3. 👨‍🎓 View and manage attendance records for students.
-4. 📅 Use the calendar to view attendance status for each day.
-5. ➕ Add new students and teachers to the system.
-6. 📅 Create and manage timetables.
-7. 👨‍🎓 Students can view their timetables.
-8. 💰 Manage and process fee payments.
-9. 📈 Generate attendance reports for a specific period.
+1. **Login to the System**:
+    - 🌐 Navigate to the login page.
+    - 🔑 Enter your credentials (admin, teacher, or parent).
+    - 🖱️ Click the login button to access the appropriate dashboard.
 
-## 🗂️ File Structure
+2. **Admin Features**:
+    - 👤 **Manage Accounts**: Add, edit, or remove parent and teacher accounts.
+    - 📘 **Manage Courses and Subjects**: Create new courses or subjects and assign them to classes.
+    - 🗓️ **Manage Timetable**: Set class schedules, assign teachers, and handle conflicts.
+    - 🎉 **Event Gallery**: Upload event images, create galleries, and manage existing events gallery.
+    - 💰 **Manage Fees**: Track fee payments, generate receipts, and send payment reminders to parents.
 
-- `📁 includes/`: Contains configuration files.
-- `📁 Student/`: Contains the main application files.
-  - `📄 attendance.php`: Main file for managing attendance.
-  - `📄 Calendar.php`: Class file for rendering the calendar.
-- `📄 header.php`: Header file included in the main layout.
-- `📄 sidebar.php`: Sidebar file included in the main layout.
-- `📄 footer.php`: Footer file included in the main layout.
+3. **Teacher Features**:
+    - 📋 **Manage Attendance**: Mark daily attendance for each class, including options for marking students as present, absent, late, or on leave.
+    - 📝 **Provide Homework/Notes**: Assign homework or notes to specific classes and track submission status.
+    - 📅 **View Timetable**:  Set class schedules, assign teachers, and handle conflicts.
+    - 🎉 **Manage Event Gallery**: Upload images related to school events from your classes.
+    - 💵 **View Fee Details**: Check fee status and reminders for students in your class.
+
+4. **Parent Features**:
+    - 📊 **View Attendance**: Check your child’s attendance history and view details for each day.
+    - 📚 **View Homework and Notes**: Monitor assigned homework and notes uploaded by teachers.
+    - 📅 **View Timetable**: Access your personal class schedule, including subjects, timings, and assigned rooms.
+    - 💳 **Pay Fees**: Use the secure fee payment gateway to clear dues online, view payment history, and download receipts.
+    - 🎉 **View Event Gallery**: Explore galleries showcasing school events and activities your child participated in.
+
+7. **Logout**:
+    - 🚪 Click on the "Logout" button to securely exit the system after completing your tasks.
 
 ## 🙏 Acknowledgements
 
