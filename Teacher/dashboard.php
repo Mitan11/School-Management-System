@@ -165,10 +165,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalStudents = <?php echo $total_students; ?>;
     const totalTeachers = <?php echo $total_teachers; ?>;
     const totalCourses = <?php echo $total_courses; ?>;
+    const totalinq = 2000;
 
     // Start the counters
     animateCounter('total-students', totalStudents);
     animateCounter('total-teachers', totalTeachers);
     animateCounter('total-courses', totalCourses);
+    animateCounter('total-inquiries', totalinq);
 });
 </script>
