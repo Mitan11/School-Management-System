@@ -43,7 +43,15 @@
                         <div class="info-box-content">
                             <span class="info-box-text">Total Sudents</span>
                             <span class="info-box-number">
-                            2,000
+                            <?php
+                                // Fetch the total number of students
+                                $result = mysqli_query($db_connection, "SELECT COUNT(*) as total FROM `user_accounts` WHERE `user_type` = 'student'");
+                                $row = mysqli_fetch_assoc($result);
+                                $total_students = $row['total'];
+
+                                // Format the number for better readability
+                                echo number_format($total_students);
+                                ?>
                             </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -58,7 +66,17 @@
                         </span>
                         <div class="info-box-content">
                             <span class="info-box-text">Total Teachers</span>
-                            <span class="info-box-number">50</span>
+                            <span class="info-box-number">
+                            <?php
+                                // Fetch the total number of students
+                                $result = mysqli_query($db_connection, "SELECT COUNT(*) as total FROM `user_accounts` WHERE `user_type` = 'teacher'");
+                                $row = mysqli_fetch_assoc($result);
+                                $total_students = $row['total'];
+
+                                // Format the number for better readability
+                                echo number_format($total_students);
+                                ?>
+                            </span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -73,7 +91,17 @@
                         <span class="info-box-icon bg-success elevation-1"><i class="fas fa-book-open"></i></span>
                         <div class="info-box-content">
                             <span class="info-box-text">Total Courses</span>
-                            <span class="info-box-number">100</span>
+                            <span class="info-box-number">
+                            <?php
+                                // Fetch the total number of courses
+                                $result = mysqli_query($db_connection, "SELECT COUNT(*) as total FROM `courses`"); // Added alias 'as total'
+                                $row = mysqli_fetch_assoc($result);
+                                $total_courses = $row['total']; // Use 'total' to get the count
+
+                                // Format the number for better readability
+                                echo number_format($total_courses); // Display the formatted number
+                            ?>
+                            </span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
