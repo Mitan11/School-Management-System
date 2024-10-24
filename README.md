@@ -42,9 +42,10 @@ This project is a **School Management System** that allows you to manage and tra
     ```
 
 3. 🗄️ Import the database schema:
-    - Create a new database in MySQL named ```sh
+    - Create a new database in MySQL named 
+    ```sh
     schoolmanagementsystem
-    ```.
+    ```
     - Import the `schoolmanagementsystem.sql` file into your database.
 
 4. 🛠️ Update the database connection details (host, username, password, database name) if required. By default, in XAMPP, the host is `localhost`, the username is `root`, the password is `''`, and the database name will be `SchoolManagementSystem`.
