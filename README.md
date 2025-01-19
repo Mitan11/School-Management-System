@@ -129,6 +129,13 @@ http://localhost/School-Management-System/
 7. **Logout**:
     - 🚪 Click on the "Logout" button to securely exit the system after completing your tasks.
 
+## Resources
+To learn more about the project, refer to the following:  
+- **Presentation**:  
+  [School Management System - Prezi](https://prezi.com/p/edit/19jxaw_txl-w/)  
+- **Detailed Documentation**:  
+  [School Management System - Google Docs](https://docs.google.com/document/d/1rqQeYXq6IrI1I4cdIXZwhyWoXCJAZoA8/edit?usp=sharing&ouid=115128502888423158007&rtpof=true&sd=true)
+
 ## 🙏 Acknowledgements
 
 - Thanks to all the contributors and open-source projects that made this project possible.
